@@ -100,11 +100,13 @@ $(document).ready(function () {
 
   $.ajax({
     url: 'data.php',
+    //recupero il file php contenente i dati
     method: 'get',
     success: function success(data) {
-      var dischi = JSON.parse(data);
+      var dischi = JSON.parse(data); //recupero il contenuto dell'array dentro al file data.php
 
       for (var i = 0; i < dischi.length; i++) {
+        //ciclo la lunghezza dell'array
         var context = {
           //creo la variabile con il contenuto che andrà nel template.
           imgCopertina: dischi[i].poster,
