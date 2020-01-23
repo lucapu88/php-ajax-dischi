@@ -19,12 +19,11 @@
       </select>
     </header>
     <main>
-
-
-      <div class="dischi-container"></div>
+      <div class="dischi-container">
+      </div>
     </main>
 
-    <script id="myTemplate" type="text/x-handlebars-template">
+    <script id="myTemplate" type="text/x-handlebars-template"> <!-- contenitore del disco che verrà appeso con js -->
       <div class="disco-singolo" dataGenere={{genere}}>
         <img class="copertina" src={{imgCopertina}} alt="{{titolo}}">
         <h3 class="titolo">{{titolo}}</h3>

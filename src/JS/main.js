@@ -3,11 +3,11 @@ $(document).ready(function(){
   var template_html = $('#myTemplate').html();//recupero il codice html del template
   var template_function = Handlebars.compile(template_html);//do in pasto a handlebars il codice html
   $.ajax({
-    url : 'data.php',
+    url : 'data.php', //recupero il file php contenente i dati
     method : 'get',
     success : function(data) {
-      var dischi = JSON.parse(data);
-      for (var i = 0; i < dischi.length; i++) {
+      var dischi = JSON.parse(data); //recupero il contenuto dell'array dentro al file data.php
+      for (var i = 0; i < dischi.length; i++) { //ciclo la lunghezza dell'array
         var context = { //creo la variabile con il contenuto che andrà nel template.
           imgCopertina : dischi[i].poster,
           titolo : dischi[i].title,
@@ -37,5 +37,5 @@ $(document).ready(function(){
         }
       });
     }
-  }); 
+  });
 });

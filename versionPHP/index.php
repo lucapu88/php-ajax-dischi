@@ -20,7 +20,7 @@
     </header>
     <main>
       <div class="dischi-container">
-  <?php foreach ($dischi as $disco) { ?>
+  <?php foreach ($dischi as $disco) { //ciclo l'array dentro il file data e all'interno ci vado ad inserire un div per ogni elemento con all'interno i rispettivi dati ?> 
           <div class="disco-singolo">
             <img class="copertina" src="<?php echo $disco['poster']; ?>" alt="copertina-disco">
             <h3 class="titolo"><?php echo $disco['title']; ?></h3>
