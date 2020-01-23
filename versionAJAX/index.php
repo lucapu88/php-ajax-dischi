@@ -1,13 +1,12 @@
-<?php include 'data.php' ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dischi musicali</title>
+    <title>dischi musicali AJAX</title>
     <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../public/css/app.css">
   </head>
   <body>
     <header>
@@ -20,16 +19,21 @@
       </select>
     </header>
     <main>
-      <div class="dischi-container">
-  <?php foreach ($dischi as $disco) { ?>
-          <div class="disco-singolo">
-            <img class="copertina" src="<?php echo $disco['poster']; ?>" alt="copertina-disco">
-            <h3 class="titolo"><?php echo $disco['title']; ?></h3>
-            <p class="artista"><?php echo $disco['author']; ?></p>
-            <p class="anno"><?php echo $disco['year']; ?></p>
-          </div>
-  <?php } ?>
-      </div>
+
+
+      <div class="dischi-container"></div>
     </main>
+
+    <script id="myTemplate" type="text/x-handlebars-template">
+      <div class="disco-singolo" dataGenere={{genere}}>
+        <img class="copertina" src={{imgCopertina}} alt="{{titolo}}">
+        <h3 class="titolo">{{titolo}}</h3>
+        <p class="artista">{{artista}}</p>
+        <p class="anno">{{anno}}</p>
+      </div>
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../public/JS/main.js" charset="utf-8"></script>
   </body>
 </html>

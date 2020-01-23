@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+}
+
+header {
+  background-color: #1ED760;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+header .trovaAlbum {
+  padding: 20px 40px;
+  background-color: black;
+  color: #1ED760;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 20px 0 20px;
+}
+
+main {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  background-color: black;
+}
+
+main .dischi-container {
+  height: 90%;
+  width: 90%;
+  padding: 50px;
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+main .dischi-container .disco-singolo {
+  width: 200px;
+  background: radial-gradient(circle, #1ed760 0%, black 100%);
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  color: white;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+main .dischi-container .disco-singolo:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  box-shadow: 0px 0px 39px 12px rgba(255, 255, 255, 0.46);
+}
+
+main .dischi-container .disco-singolo .copertina {
+  width: 100%;
+  padding: 20px;
+  display: -webkit-box;
+  display: flex;
+}
+
+main .dischi-container .disco-singolo .titolo {
+  text-transform: uppercase;
+  margin: 0 10px 0 10px;
+  text-align: center;
+}
+
+main .dischi-container .disco-singolo .artista {
+  padding-top: 20px;
+}
+
+main .dischi-container .disco-singolo .anno {
+  padding-bottom: 30px;
+}
+
