@@ -5,7 +5,7 @@
   font-family: 'Kanit', sans-serif;
 }
 header {
-  background-color: #4682B4;
+  background-color: #1C1A68;
   display: flex;
   justify-content: center;
 }
@@ -13,10 +13,9 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #365D95;
+  background: radial-gradient(circle, rgba(90,87,187,1) 47%, rgba(28,26,104,1) 100%);
 }
 .dischi-container {
-  background-color: #365D95;
   height: 90%;
   width: 90%;
   padding: 50px;
@@ -26,7 +25,7 @@ main {
 }
 .disco-singolo {
   width: 200px;
-  background-color: #4682B4;
+  background-color: #1C1A68;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -59,7 +58,7 @@ main {
 }
 .trovaAlbum {
   padding: 20px 40px;
-  background-color: #4682B4;
+  background-color: #1C1A68;
   color: white;
   font-weight: bold;
   font-size: 20px;

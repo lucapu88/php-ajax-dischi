@@ -26,7 +26,7 @@
             <img class="copertina" src="<?php echo $disco['poster']; ?>" alt="copertina-disco">
             <h3 class="titolo"><?php echo $disco['title']; ?></h3>
             <p class="artista"><?php echo $disco['author']; ?></p>
-            <p class="anno"><?php echo $disco['year']; ?>}</p>
+            <p class="anno"><?php echo $disco['year']; ?></p>
           </div>
   <?php } ?>
       </div>
