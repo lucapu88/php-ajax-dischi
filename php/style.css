@@ -6,9 +6,8 @@
 }
 header {
   background-color: #4682B4;
-  height: 10vh;
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 main {
   display: flex;
@@ -64,5 +63,5 @@ main {
   color: white;
   font-weight: bold;
   font-size: 20px;
-  margin-top: 50px;
+  margin: 20px 0 20px;
 }
