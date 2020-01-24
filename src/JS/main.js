@@ -1,4 +1,5 @@
-var $ = require('jquery');
+var $ = require('jquery'); //includo jquery
+const Handlebars = require("handlebars"); //includo handlebars
 $(document).ready(function(){
   var template_html = $('#myTemplate').html();//recupero il codice html del template
   var template_function = Handlebars.compile(template_html);//do in pasto a handlebars il codice html
